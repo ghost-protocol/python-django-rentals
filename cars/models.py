@@ -52,4 +52,4 @@ class Order(models.Model):
 	modified = models.DateTimeField(default=timezone.now)
 
 	def __unicode__(self):
-		return("%s %s" % (self.car, self.pickup_time))
+		return("%s %s %s" % (self.username, self.car, self.pickup_time))
